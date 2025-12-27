@@ -32,6 +32,6 @@ fate0的博客 阴阳师：一个非酋的逆向旅程 (自行搜索)
 #### 修复pyc
 根据前人们的工作，得知NeoX修改了CPython的opcode
 
-直接用Windows找到的NeoXPython运行一段py文件，得到opcode映射关系
+直接用Windows找到的NeoXPython运行一段py文件，得到用NeoXPython生成的pyc后
 
-拿到映射关系后，修复opcode
+再用compare_opcode.py(Python2.7.3正常环境运行)对两个pyc文件做opcode对比，得出映射关系
