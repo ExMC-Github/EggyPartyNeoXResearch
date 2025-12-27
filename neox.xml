@@ -1,0 +1,131 @@
+<ppg3d>
+	<modules>
+		<module
+			Name		= 'Python'
+			File		= 'python.dll'
+		/>
+		<module
+			Name		= 'Collision'
+			File		= 'collision.dll'
+		/>
+	</modules>
+	<client
+		ResourceRoot		= '.\res'
+		LimitDisplayRate	= 'False'
+		ShowLogWindow		= 'True'
+		DumpType		= '0'
+		DumpPath		= 'dumps'
+		ShowDumpDlg		= 'True'
+		FixedLogicRate = 'False'
+		PCFixedLogicRate = 'False'
+		WindowClientWidth	= '1600'
+		WindowClientHeight	= '900'
+		WindowAutoSize = 'True'
+		FrameRate = '60'
+		UseCADisplayLink = 'True'
+		CAFrameInterval = '2'
+		FileSystem = '5'
+		>
+	</client>
+	<log
+		FileName = '%WORKDIR%/log/client%INST%_log.txt'
+		OldFileName = '%WORKDIR%/log/client%INST%_log_old_%ROTATE%.txt'
+		>
+	</log>
+	<profiling
+		MemoryMonitor = 'False'
+		>
+	</profiling>
+	<python ThreadEnable  = 'True'>   </python>
+	<render
+		Depth			= '32'
+		MultiSample		= '2'
+		VSync			= 'True'
+		OneLightOptimize = 'True'
+		EnableShadowMap = 'True'
+		EnableDepthShadow = 'True'
+		UseClassifiedVertexPool = 'True'
+		MaxPointLight = '3'
+		DynamicDPBatching = 'True'
+		EnableCSMCache = 'False'
+		EnableRenderThread = 'True'
+		EnableDeviceThread = 'True'
+		EnableThreadedGPURes = 'True'
+		ShadowMapLightDistanceOffset = '10.0'
+		ShadowMapNearClipZ = '10.0'
+		ShadowMapFarClipZ = '4000.0'
+		__EffectCacheBehavior = '15'
+		UseNewShadow = 'True'
+		UseCSM = 'False'
+		UseSoftShadow = 'True'
+		EnableSSAO = 'False'
+		SSAORTScale = '0.5'
+		UsePreZ = 'False'
+		UseMetal = 'False'
+		UseShaderCache = 'True'
+		EffectCacheEnable = 'True'
+		ExportShaderCache = 'False'
+		BinaryCacheEnable = 'False'
+		PreloadCacheEnable = 'True'
+		>
+	</render>
+	<world
+		AutoCutBones = 'True'
+		GpuSkinningEnable = 'False'
+		PixelDecal = 'False'
+		GpuParticle = 'False'
+		MergeStaticModel = 'True'
+		MergeDynamicModel = 'False'
+		SubMeshBatching = 'True'
+		MergeStaticShadowMap = 'True'
+		HardwareInstancing = 'True'
+		EnableVegetation = 'False'
+		PbrTerrain = 'True'
+		EnableMergeAlpha = 'True'
+		EnableMultiThreadParticle = 'False'
+		EnableMultiThreadCPUSkin = 'False'
+		EnableAnimationThread = 'False'
+		DynamicResolutionRendering = 'True'
+		>
+	</world>
+	<cocosui
+		LogLevel = '30'
+		EnableBatchOptimize = 'True'
+		AsyncCreateTexture = 'True'
+		AsyncUpdateTexture = 'True'
+		MaxUpdateTextureTaskNumOnce = '100'
+		SharedTextureAntiAliasEx = 'False'
+		SearchPath = 'ui'
+		TtfFontMax = '80'
+		BlurStageName = 'blur_for_ui'
+		BlurRenderTarget = 'OneEighthTarget'
+		TtfFontScale = '1.2'
+		ForceDefaultTftFont = 'gui2/font/simhei_plus.ttf'
+	>
+		<MergeSprite Enabled="True" RegexDebug="True">
+			<Group Name="astc4x4_icons"
+				TextureSize="2000"
+				MergeTextureSizeLimit="512"
+				PackingTextureLimit="4"
+				Algorithm="Lines"
+				Format_iOS="ASTC44"
+				Format_Android="ASTC44"
+				Format_PC="RGBA"
+			/>
+		</MergeSprite>
+	</cocosui>
+	<filesystems>
+		<filesystem name='res'>
+			<loader name='discrete' opener='sys' root='%DOC_DIR%\res' depth = '0'/>
+			<loader name='ppk' opener='sys' root='%DOC_DIR%\assets' depth = '0'/>
+			<loader name='npk' opener='sys' root='%DOC_DIR%\res' depth = '0'/>
+			<loader name='npk' opener='obb' root='res' depth = '0'/>
+			<loader name='npk' opener='asset' root='res' depth = '0'/>
+			<loader name='discrete' opener='os' root='%WORK_DIR%\res' depth = '0'/>
+		</filesystem>
+		<filesystem name='script'>
+			<loader name='npk' opener='sys' root='%DOC_DIR%\script' depth = '0'/>
+			<loader name='npk' opener='asset' root='script' depth = '0'/>
+		</filesystem>
+	 </filesystems>
+</ppg3d>
