@@ -34,4 +34,8 @@ fate0的博客 阴阳师：一个非酋的逆向旅程 (自行搜索)
 
 直接用Windows找到的NeoXPython运行一段py文件，得到用NeoXPython生成的pyc后
 
-再用compare_opcode.py(Python2.7.3正常环境运行)对两个pyc文件做opcode对比，得出映射关系
+再用正常的python2.7.3生成一次，删除 division 的注释后再运行一次，得到四个pyc文件
+
+再用compare_opcode.py对文件进行分析，得出opcode映射代码
+
+修复opcode之后反编译
