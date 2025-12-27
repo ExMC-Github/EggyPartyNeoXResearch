@@ -38,4 +38,11 @@ fate0的博客 阴阳师：一个非酋的逆向旅程 (自行搜索)
 
 再用compare_opcode.py对文件进行分析，得出opcode映射代码
 
-修复opcode之后反编译
+使用pyc_decryptor.py修复opcode就可以了
+
+#### 从Pyc文件得到Py源码
+uncompyle6可以反编译pyc文件
+
+由于NeoXPython是2.7,整个流程基本都是用2.7做的，uncompyle6在2.7下处理unicode docstring有问题
+
+所以需要切换到Python3，切换要特殊处理一下
