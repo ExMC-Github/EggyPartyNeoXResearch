@@ -4,7 +4,7 @@
 ## Tips
 该仓库可能不适用当前的版本
 
-请前往[New Eggy Party NeoXResearch](https://github.com/ExMC-Github/EggyPartyNeoXResearch)
+请前往[New Eggy Party NeoXResearch](https://github.com/ExMC-Github/New-EggyPartyNeoXResearch)
 
 ## 参考
 [NeoxResearch](https://github.com/ZhangFengze/NeoxResearch)
