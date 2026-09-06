@@ -1,6 +1,10 @@
 # EggyPartyNeoXResearch
 针对蛋仔派对的网易NeoX引擎的研究
 
+## Tips
+该仓库可能不适用当前的版本
+请前往[New Eggy Party NeoXResearch](https://github.com/ExMC-Github/EggyPartyNeoXResearch)
+
 ## 参考
 [NeoxResearch](https://github.com/ZhangFengze/NeoxResearch)
 
